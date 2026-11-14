@@ -16,12 +16,31 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+.login-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.teacher-login {
+  margin: 0 auto 20px;
+}
+
+.teacher-session {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 0 0 20px;
 }
 
 header h1 {
@@ -190,6 +209,13 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 520px) {
+  .login-toggle {
+    position: static;
+    margin-bottom: 12px;
+  }
 }
 
 footer {
